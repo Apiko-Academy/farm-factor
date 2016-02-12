@@ -1,0 +1,53 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+check
+less
+coffeescript
+underscore
+accounts-base
+accounts-password
+iron:router
+zephraph:namespace
+yogiben:admin
+alanning:roles
+fortawesome:fontawesome
+dburles:collection-helpers
+juliancwirko:s-alert
+juliancwirko:s-alert-genie
+sacha:spin
+useraccounts:bootstrap
+useraccounts:core
+twbs:bootstrap
+msavin:mongol
+dburles:mongo-collection-instances
+momentjs:moment
+rajit:bootstrap3-datepicker
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
+aldeed:autoform-bs-datepicker
+aldeed:template-extension
+jss:path
+peerlibrary:fs
+ostrio:meteor-root
+dburles:google-maps
+maazalik:highcharts
+zimme:active-route
+useraccounts:iron-routing
+fezvrasta:bootstrap-material-design
+rzymek:moment-locale-uk
+risul:chance
+reactive-var
+reywood:publish-composite
+meteorhacks:kadira@2.23.4
+meteorhacks:sikka
+fastclick
+softwarerero:accounts-t9n
+matb33:collection-hooks
+raix:handlebar-helpers
+nimble:restivus

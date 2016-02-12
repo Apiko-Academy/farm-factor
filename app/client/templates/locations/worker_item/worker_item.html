@@ -1,0 +1,12 @@
+<template name="WorkerItem">
+  <div class="worker-item">
+    <h3 class="worker-name">{{profile.name}}</h3>
+    <div class="worker-coordinates">
+      {{#if profile.location}}
+        <a href="{{pathFor 'locations' query=query}}" class="coordinates">
+          {{latitude}}, {{longitude}}
+        </a>
+      {{/if}}
+    </div>
+  </div>
+</template>

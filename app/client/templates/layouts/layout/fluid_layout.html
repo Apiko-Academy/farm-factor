@@ -1,0 +1,14 @@
+<template name="Layout">
+  <header>
+    {{> yield region='header'}}
+  </header>
+  <div class="main-content container-fluid">
+    {{> yield}}
+  </div>
+  <footer class="container-fluid">
+    <div class="footer-well">
+      Farmfactor &copy;2015
+    </div>
+  </footer>
+  {{> sAlert}}
+</template>

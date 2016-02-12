@@ -1,0 +1,19 @@
+{
+  "_id": "fKyTZZtaN3bpYoz4W",
+  "services": {
+    "password": {
+      "bcrypt": "$2a$10$s6v1KvoM3IhWPayu3Vb4/u9Tt7nyRGSqawVMg0V7q7Rf3AZ14UIQa"
+    }
+  },
+  "profile": {
+    "name": "Комбайнер Василина",
+    "location": {
+      "latitude": 49.562035,
+      "longitude": 25.580463
+    }
+  },
+  "username":"worker2",
+  "roles": [
+    "worker"
+  ]
+}

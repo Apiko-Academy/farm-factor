@@ -1,0 +1,136 @@
+#locations {
+  .map-container {
+    height: calc(~"100vh - 110px");
+    padding: 0;
+  }
+  #locationsSidebar {
+    h1 {
+      margin-top: 0;
+      line-height: 60px;
+      a {
+        padding: 8px;
+        text-decoration: none;
+      }
+      a.active {
+        background-color: #EEE;
+        border-radius: 2px;
+        border: 1px solid #D8D8D8;
+      }
+    }
+    background-color: #fff;
+    padding: 34px;
+    .locations-list {
+      .coordinates {
+        color: #bbb;
+      }
+    }
+  }
+}
+
+.tabs {
+  float: none;
+  list-style: none;
+  padding: 0;
+  border-bottom: 4px solid #ccc;
+}
+ 
+.tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+ 
+.tabs input[type=radio] {
+  display:none;
+}
+ 
+.tabs label {
+  display: block;
+  float: left;
+  width: 50%;
+
+  color: #ccc;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 2;
+
+  cursor: pointer;
+  box-shadow: inset 0 4px #ccc;
+  border-bottom: 4px solid #ccc;
+
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  transition: all 0.5s;
+}
+  
+.tabs label span {
+  font-size: 14px;
+}
+ 
+.tabs label i {
+  padding: 5px;
+  margin-right: 0;
+}
+ 
+.tabs label:hover {
+  color: #009688;
+  box-shadow: inset 0 4px #009688;
+  border-bottom: 4px solid #009688;
+}
+ 
+.tab-content {
+  display: none;
+  width: 100%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color:#ffffff;
+  max-height: calc(~"100vh - 251px");
+  overflow-y: scroll;
+}
+
+.tab-content * {
+ 
+    -webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out;
+}
+ 
+@keyframes scale {
+ 
+  0% { 
+    transform: scale(0.9);
+    opacity: 0;
+    }
+ 
+  50% {
+    transform: scale(1.01);
+    opacity: 0.5;
+    }
+ 
+  100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+ 
+}
+
+.tabs [id^="tab"]:checked + label {
+  background: #FFF;
+  color: #009688;
+  box-shadow: inset 0 4px #009688;
+  border-bottom: 4px solid #009688;
+}
+ 
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3 {
+  display: block;
+}
+
+@media (max-width: 350px) {
+  .tabs label span {
+    display: none;
+  }
+}

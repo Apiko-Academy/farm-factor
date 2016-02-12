@@ -1,0 +1,19 @@
+{
+  "_id": "X3fLEQeuCTcybmHE9",
+  "services": {
+    "password": {
+      "bcrypt": "$2a$10$s6v1KvoM3IhWPayu3Vb4/u9Tt7nyRGSqawVMg0V7q7Rf3AZ14UIQa"
+    }
+  },
+  "profile": {
+    "name": "Василь Кисіль",
+    "location": {
+      "latitude": 49.462494,
+      "longitude": 25.833877
+    }
+  },
+  "username":"worker5",
+  "roles": [
+    "worker"
+  ]
+}

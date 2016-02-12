@@ -1,0 +1,19 @@
+{
+  "_id": "xwBtroFHaJWL4gZXW",
+  "services": {
+    "password": {
+      "bcrypt": "$2a$10$s6v1KvoM3IhWPayu3Vb4/u9Tt7nyRGSqawVMg0V7q7Rf3AZ14UIQa"
+    }
+  },
+  "profile": {
+    "name": "Петро Япек",
+    "location": {
+      "latitude": 49.460264,
+      "longitude": 25.852173
+    }
+  },
+  "username":"worker4",
+  "roles": [
+    "worker"
+  ]
+}

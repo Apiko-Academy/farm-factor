@@ -1,0 +1,31 @@
+<template name="SelectJobType">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-2">
+            <a href="{{pathFor 'selectLocation'}}"><span class=" mdi-content-undo"></span> </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-10 col-lg-offset-8 col-md-offset-8 ">
+            <form id="search-form">
+                <div class="form-group">
+                    <input class="form-control floating-label" id="search-input" type="text" placeholder="Пошук...">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="list-group">
+      {{#each jobs}}
+          <div class="list-group-item shadow-z-1">
+              <div class="row-action-primary">
+                  <i class="mdi-av-play-arrow"></i>
+              </div>
+              <div class="row-content">
+                  <div class="action-secondary"><i class="mdi-material-info"></i></div>
+                  <h4 class="list-group-item-heading"><a href="{{pathFor 'editDocument' id=_id}}">{{name}} </a></h4>
+              </div>
+          </div>
+          <div class="list-group-separator"></div>
+      {{/each}}
+    </div>
+</template>

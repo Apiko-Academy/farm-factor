@@ -1,0 +1,24 @@
+{
+  "name": "Звіт про витрати на пальне на полі №1",
+  "fields": [
+    {
+      "label": "Зорано поля",
+      "unit": "га",
+      "type": "Number",
+      "defaultValue": 0,
+      "value": 30
+    },
+    {
+      "label": "Витрачено пального",
+      "unit": "л",
+      "type": "Number",
+      "defaultValue": "",
+      "value": 29
+    },
+    {
+      "label": "Локація",
+      "type": "Location",
+      "value": "s7LF7LRbWWAShrpu7"
+    }
+  ]
+}

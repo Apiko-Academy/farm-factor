@@ -1,0 +1,27 @@
+<template name="UserProfile">
+  <div class="user-profile-card container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 col-lg-offset-3">
+        <div class="card hovercard">
+          <div class="cardheader">
+
+          </div>
+          <div class="avatar">
+            <img alt="" src="http://www.8one8.com/wp-content/uploads/2013/05/farmer_blow.jpg">
+          </div>
+          <div class="info">
+            <div class="title">
+              {{user.profile.name}}
+            </div>
+            <div class="desc">Водій комбайну</div>
+            <div class="desc">Стаж: 10 років</div>
+            <div class="desc">Козова</div>
+          </div>
+          <div class="bottom">
+            {{> UserProgress}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

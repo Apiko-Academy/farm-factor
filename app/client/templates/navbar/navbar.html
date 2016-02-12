@@ -1,0 +1,103 @@
+<template name="Navbar">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          FarmFactor
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          {{# if isInRole 'admin' 'manager'}}
+            <li class="{{isActiveRoute 'dashboard'}}">
+              {{# linkTo route='dashboard'}}
+                Інформаційна панель
+              {{/ linkTo}}
+            </li>
+            <li class="{{isActiveRoute 'documentDefinitionsList'}}">
+              {{# linkTo route='documentDefinitionsList'}}
+                Шаблони
+              {{/ linkTo}}
+            </li>
+            <li class="{{isActiveRoute 'locations'}}">
+              {{# linkTo route='locations'}}
+                Карта
+              {{/ linkTo}}
+            </li>
+          {{/ if}}
+          {{# if currentUser}}
+            <li class="{{isActiveRoute 'selectLocation'}}">
+              {{# linkTo route='selectLocation'}}
+                Список локацій
+              {{/ linkTo}}
+            </li>
+            <li class="{{isActiveRoute 'documents'}}">
+              {{# linkTo route='documents'}}
+                Документи
+              {{/ linkTo}}
+            </li>
+            <li class="{{isActiveRoute 'contacts'}}">
+              {{# linkTo route='contacts'}}
+                Контакти
+              {{/ linkTo}}
+            </li>
+          {{/ if}}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {{# if currentUser}}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"
+                   data-toggle="dropdown"
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false">
+                    {{currentUser.profile.name}}
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="{{isActiveRoute 'userProfile'}}">
+                    {{# linkTo route='userProfile'}}
+                      Профіль
+                    {{/ linkTo}}
+                  </li>
+                    {{# if isInRole 'admin'}}
+                      <li class="{{isActiveRoute 'adminDashboard'}}">
+                        {{# linkTo route='adminDashboard'}}
+                          Панель керування
+                        {{/ linkTo}}
+                      </li>
+                    {{/ if}}
+                  <li>
+                    <a href="#" data-action="sign-out">Вийти</a>
+                  </li>
+                </ul>
+              </li>
+            {{else}}
+              <li class="{{isActiveRoute 'atSignIn'}}">
+                {{# linkTo route='atSignIn'}}
+                  Авторизуватись
+                {{/ linkTo}}
+              </li>
+              <li class="{{isActiveRoute 'atSignUp'}}">
+                {{# linkTo route='atSignUp'}}
+                  Зареєструватись
+                {{/ linkTo}}
+              </li>
+            {{/if}}
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+</template>

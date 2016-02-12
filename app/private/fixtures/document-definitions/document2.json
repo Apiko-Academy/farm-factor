@@ -1,0 +1,21 @@
+{
+  "name": "Не такий важливий тип документа",
+  "fields": [
+    {
+      "label": "Перше значення",
+      "unit": "грн.",
+      "type": "Number",
+      "defaultValue": 0
+    },
+    {
+      "label": "Ще одне нумероване значення",
+      "unit": "кг",
+      "type": "Number",
+      "defaultValue": 0
+    },
+    {
+      "label": "Локація",
+      "type": "Location"
+    }
+  ]
+}

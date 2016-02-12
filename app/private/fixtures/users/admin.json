@@ -1,0 +1,21 @@
+{
+  "_id": "Zr2qZMRcyvKKg6ecN",
+  "services": {
+    "password": {
+      "bcrypt": "$2a$10$s6v1KvoM3IhWPayu3Vb4/u9Tt7nyRGSqawVMg0V7q7Rf3AZ14UIQa"
+    }
+  },
+  "profile": {
+    "name" : "Адміністратор",
+    "location" : {
+      "latitude" : 49.562805000000246,
+      "longitude" : 25.581232999999973
+    }
+
+  },
+  "username":"admin",
+  "roles": [
+    "admin"
+  ]
+
+}

@@ -1,0 +1,6 @@
+{
+  "Meteor.users": "users",
+  "Locations": "locations",
+  "DocumentDefinitions": "document-definitions",
+  "Documents": "documents"
+}

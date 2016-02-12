@@ -1,0 +1,24 @@
+{
+  "name": "Форма на зерно",
+  "fields": [
+    {
+      "label": "Зорано поля",
+      "unit": "га",
+      "type": "Number",
+      "defaultValue": 0,
+      "value": 23
+    },
+    {
+      "label": "Витрачено пального",
+      "unit": "л",
+      "type": "Number",
+      "defaultValue": "",
+      "value": 20
+    },
+    {
+      "label": "Локація",
+      "type": "Location",
+      "value": "j8Aoqzf4sRGgbXCkn"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<template name="SelectLocation">
+  <div class="select-location">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-2  ">
+        <a href="#" id="gps-link"><span class=" mdi-maps-my-location"></span> </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-10 col-lg-offset-8 col-md-offset-8 ">
+        <form id="search-form">
+          <div class="form-group">
+            <input class="form-control floating-label" id="search-input" type="text" placeholder="Пошук...">
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="list-group">
+      {{#each locations}}
+        <div class="location-item list-group-item shadow-z-1">
+          <div class="row-action-primary">
+            <i class="{{classType type}}"></i>
+          </div>
+          <div class="row-content">
+            <div class="action-secondary"><i class="mdi-material-info"></i></div>
+            <h4 class="list-group-item-heading">
+              <a href="{{pathFor 'selectJobType' _locationId=_id}}">
+                {{name}}
+              </a>
+            </h4>
+            {{# if displayCropsButton}}
+               <a href="{{pathFor 'cropsHistory' id=_id}}" class="btn btn-info crops-button">
+                 Посіви
+               </a>
+             {{/if}}
+            <p class="list-group-item-text">{{description}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</template>

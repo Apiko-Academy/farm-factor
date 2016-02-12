@@ -1,0 +1,19 @@
+<template name="EnterResults">
+  <div class="enter-results">
+    <h1 class="text-center">Результати діяльності</h1>
+
+      {{#each documentFields}}
+        <p class="text-center">
+          <label>
+              {{label}}
+            <br/>
+            <input type="text"/>
+          </label>
+        </p>
+      {{/each}}
+
+    <p class="text-center">
+      <button class="btn btn-primary">Зберегти</button>
+    </p>
+  </div>
+</template>

@@ -1,0 +1,36 @@
+<template name="Locations">
+  <div class="container-fluid">
+    <div id="locations" class="row">
+      <div id="locationsSidebar" class="col-sm-5 col-md-4 col-lg-3">
+        <div class="tabs">
+          <!-- Radio button and lable for #tab-content1 -->
+          <input type="radio" name="tabs" id="tab1" checked>
+          <label for="tab1">
+              <i class="fa fa-object-group"></i><span>Об'єкти</span>
+          </label>
+          <input type="radio" name="tabs" id="tab2">
+          <label for="tab2">
+              <i class="fa fa-users"></i><span>Працівники</span>
+          </label>
+          <div id="tab-content1" class="tab-content">
+            <div class="locations-list">
+              {{#each locations}}
+                {{> LocationItem}}
+              {{/each}}
+            </div>
+          </div> <!-- #tab-content1 -->
+          <div id="tab-content2" class="tab-content">
+            <div class="locations-list">
+              {{#each workers}}
+                {{> WorkerItem}}
+              {{/each}}
+            </div>
+          </div> <!-- #tab-content2 -->
+        </div>
+      </div>
+      <div class="map-container col-sm-7 col-md-8 col-lg-9">
+        {{> googleMap name="locationsMap" options=mapOptions}}
+      </div>
+    </div>
+  </div>
+</template>

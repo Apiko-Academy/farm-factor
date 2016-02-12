@@ -1,0 +1,19 @@
+{
+  "_id": "Ar2qZMRcyvKKg6ecF",
+  "services": {
+    "password": {
+      "bcrypt": "$2a$10$s6v1KvoM3IhWPayu3Vb4/u9Tt7nyRGSqawVMg0V7q7Rf3AZ14UIQa"
+    }
+  },
+  "profile": {
+    "location": {
+      "latitude": 49.4598,
+      "longitude": 25.55434
+    },
+    "name": "Іван Петрович"
+  },
+  "username":"worker",
+  "roles": [
+    "worker"
+  ]
+}

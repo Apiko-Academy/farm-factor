@@ -1,0 +1,19 @@
+<template name="DocumentEditor">
+  <h1>{{doc.name}}</h1>
+  <hr>
+  <form>
+    {{# each doc.fields}}
+      <div class="form-group">
+        <label for="{{label}}">{{label}}</label>
+        {{# if $eq type 'Location'}}
+          <input type="text" class="form-control" id="{{label}}" value="{{location value}}" disabled>
+        {{else}} {{# if $eq type 'User'}}
+          <input type="text" class="form-control" id="{{label}}" value="{{user value}}" disabled>
+        {{else}}
+          <input type="{{inputType type}}" class="form-control" id="{{label}}" value="{{value}}">
+        {{/ if}} {{/ if}}
+      </div>
+    {{/ each}}
+    <button type="submit" class="btn btn-primary pull-right">Зберегти</button>
+  </form>
+</template>

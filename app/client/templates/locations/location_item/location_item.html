@@ -1,0 +1,13 @@
+<template name="LocationItem">
+  <div class="location-item">
+    <h3 class="location-name">{{name}}</h3>
+    {{#if description}}
+      <div class="location-description">{{description}}</div>
+    {{/if}}
+    <div class="location-coordinates">
+      <a href="{{pathFor 'locations' query=query}}" class="coordinates">
+        {{latitude}}, {{longitude}}
+      </a>
+    </div>
+  </div>
+</template>

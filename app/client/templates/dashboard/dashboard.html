@@ -1,0 +1,76 @@
+<template name="Dashboard">
+  <div class="alert alert-success text-center">
+    Результати збору урожаю за {{date}}
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+        {{> ChartDisplay type="spline"}}
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+        {{> ChartDisplay type="pie"}}
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Ім’я робітника</th>
+            <th>К-ть зібраних тюків</th>
+            <th>Затрати палива</th>
+          </tr>
+          </thead>
+          <tbody>
+          {{#each tempTableData}}
+            <tr>
+              <td>{{date1}}</td>
+              <td>{{name1}}</td>
+              <td>{{number3}} шт.</td>
+              <td>{{number2}} л</td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <i class="fa fa-bell fa-fw"></i> Стан складу
+          </div>
+          <div class="panel-body">
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <i class="fa fa-comment fa-fw"></i> Нітратні добрива <span class="pull-right text-muted small"><em>200
+                000 тон</em> </span>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="fa fa-twitter fa-fw"></i> Мінеральні добрива <span class="pull-right text-muted small"><em>189
+                999 тон</em> </span>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="fa fa-envelope fa-fw"></i> Лопати <span class="pull-right text-muted small"><em>2983 шт.</em> </span>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="fa fa-tasks fa-fw"></i> Корм ліверний <span class="pull-right text-muted small"><em>8200
+                кг</em> </span>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="fa fa-upload fa-fw"></i> Щавель чорногорський <span class="pull-right text-muted small"><em>
+                0.233 тон</em> </span>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="fa fa-bolt fa-fw"></i> Сіно селянське <span class="pull-right text-muted small"><em>82 847
+                тюків</em> </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

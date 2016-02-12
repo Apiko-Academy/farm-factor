@@ -1,0 +1,18 @@
+<template name="DocumentDefinitions">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-5 col-md-offset-5 col-sm-offset-5 ">
+  {{# PageHeader title="Шаблони документів"}}
+    &nbsp;
+    {{# linkTo route='createDocumentDefinition'}}
+      <button class="btn btn-success  btn-fab btn-raised mdi-social-plus-one "></button>
+    {{/ linkTo}}
+  {{/ PageHeader}}
+</div>
+
+<div class="row">
+    {{# each documentDefinitions}}
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+            {{> DefinitionItem}}
+        </div>
+    {{/ each}}
+</div>
+</template>

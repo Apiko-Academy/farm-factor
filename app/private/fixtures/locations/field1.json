@@ -1,0 +1,17 @@
+{
+  "_id": "Jxt9z67NAPRMGbwJa",
+  "name": "Соняшник 10 Га",
+  "description": "Поле для соняшнику. Хомка",
+  "latitude": 49.262631,
+  "longitude": 25.589201,
+  "type": "field",
+  "cropsHistory": [{
+    "cropName": "Пшениця",
+    "startDate": "Thu Jan 01 2015 02:00:00 GMT+0200 (EET)",
+    "endDate": "Fri May 01 2015 03:00:00 GMT+0300 (EEST)"
+  }, {
+    "cropName": "Соняшник",
+    "startDate": "Wed Jul 01 2015 03:00:00 GMT+0300 (EEST)",
+    "endDate": "Tue Sep 01 2015 03:00:00 GMT+0300 (EEST)"
+  }]
+}

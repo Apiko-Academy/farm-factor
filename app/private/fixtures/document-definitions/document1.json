@@ -1,0 +1,17 @@
+{
+  "name": "Важливий тип документа",
+  "fields": [{
+    "label": "Значення 1",
+    "unit": "грн.",
+    "type": "Number",
+    "defaultValue": 0
+  }, {
+    "label": "Вага",
+    "unit": "кг",
+    "type": "Number",
+    "defaultValue": 0
+  }, {
+    "label": "Локація",
+    "type": "Location"
+  }]
+}

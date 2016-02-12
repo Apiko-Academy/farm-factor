@@ -1,0 +1,19 @@
+{
+  "_id": "GgfLnAzRav8EGGYjJ",
+  "services": {
+    "password": {
+      "bcrypt": "$2a$10$s6v1KvoM3IhWPayu3Vb4/u9Tt7nyRGSqawVMg0V7q7Rf3AZ14UIQa"
+    }
+  },
+  "profile": {
+    "name": "Пан Остап",
+    "location": {
+      "latitude": 49.458651,
+      "longitude": 25.824429
+    }
+  },
+  "username":"worker3",
+  "roles": [
+    "worker"
+  ]
+}
